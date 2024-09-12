@@ -1,0 +1,111 @@
+body {
+  background: url("try.gif") no-repeat center center/cover;
+  color: #333;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.chart-container {
+  margin-bottom: 20px;
+}
+
+.bar-container {
+  position: relative;
+  width: 100%;
+  height: 50px; /* Increased height for larger bars */
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 25px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Slightly transparent background for the bar container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bar {
+  position: absolute;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.total-bar {
+  background-color: rgba(255, 255, 255, 0.3); /* Slightly transparent color */
+  width: 100%;
+}
+
+.your-bar {
+  background-color: #4caf50;
+  width: 0%; /* Initial width for animation */
+}
+
+.marks-text {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #333;
+}
+
+#play-again {
+  background-color: #ffa500;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 150ms;
+}
+
+#play-again:hover {
+  background-color: #ff7f00;
+}
+
+.video-container {
+  display: none;
+  margin-top: 20px;
+}
+
+.video-container video {
+  width: 100%;
+  height: 360px; /* Adjust height as needed */
+}
+
+#home-button {
+  background: linear-gradient(
+    45deg,
+    #00bfff,
+    #ff1493
+  ); /* Innovative gradient color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.3s;
+}
+
+#home-button:hover {
+  background: linear-gradient(45deg, #ff1493, #00bfff);
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
