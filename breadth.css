@@ -1,0 +1,139 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #14155e; /* Very light blue-gray color for relaxation */
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+.welcome-heading {
+  margin: 20px;
+  text-align: center;
+  color: #ffffff; /* Darker color for better readability */
+}
+
+.welcome-heading h1 {
+  font-size: 2.5rem; /* Adjust size as needed */
+  color: #2c3e50; /* Deep blue color for emphasis */
+}
+
+.welcome-heading p {
+  font-size: 1.2rem; /* Slightly larger text for readability */
+  color: #555; /* Medium gray for softer text */
+  margin-top: 10px;
+  line-height: 1.6; /* Improve readability with line spacing */
+}
+
+.visualization {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background: rgba(244, 240, 240, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 4s ease-in-out;
+}
+
+.glass-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Prevent interference with interactions */
+  transition: background 1s ease-in-out;
+}
+
+.instructions {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #ffffff; /* Darker color for better readability */
+}
+
+.hidden {
+  display: none;
+}
+
+#feedback {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fffcfc; /* Darker color for better readability */
+}
+#next {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #28a745; /* Green color for the button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for 3D effect */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#next:hover {
+  background: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly scale up the button */
+}
+
+#next:active {
+  background: #1e7e34; /* Even darker green on click */
+  transform: scale(0.98); /* Slightly scale down the button */
+}
+.h1 {
+  color: #fff;
+}
+.welcome-heading {
+  margin: 20px;
+  text-align: center;
+  color: #333; /* Darker color for better readability */
+}
+
+.welcome-heading h1 {
+  font-size: 2.5rem; /* Adjust size as needed */
+  color: #2c3e50; /* Deep blue color for emphasis */
+}
+
+.welcome-heading p {
+  font-size: 1.2rem; /* Slightly larger text for readability */
+  color: #555; /* Medium gray for softer text */
+  margin-top: 10px;
+  line-height: 1.6; /* Improve readability with line spacing */
+}
+#next {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #28a745; /* Green color for the button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for 3D effect */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#next:hover {
+  background: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly scale up the button */
+}
+
+#next:active {
+  background: #1e7e34; /* Even darker green on click */
+  transform: scale(0.98); /* Slightly scale down the button */
+}

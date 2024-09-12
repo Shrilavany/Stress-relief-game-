@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovative Breathing Game</title>
+    <link rel="stylesheet" href="breadth.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="visualization" id="visualization">
+        <div class="glass-effect"></div>
+      </div>
+      <div class="instructions" id="instructions">Prepare to breathe...</div>
+      <div id="settings" class="hidden">
+        <label for="inhale-duration">Inhale Duration (seconds):</label>
+        <input type="number" id="inhale-duration" min="1" max="10" value="4" />
+        <label for="exhale-duration">Exhale Duration (seconds):</label>
+        <input type="number" id="exhale-duration" min="1" max="10" value="4" />
+      </div>
+      <div id="feedback" class="hidden"></div>
+      <button id="next" class="hidden">Next</button>
+    </div>
+    <script src="breadth.js"></script>
+  </body>
+</html>

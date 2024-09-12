@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stress Relief Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="video-background">
+      <iframe
+        src=""
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="container">
+      <header>
+        <h1>Stress Relief Game</h1>
+      </header>
+      <div id="game">
+        <h2 id="question">Question will appear here</h2>
+        <div id="choices">
+          <div class="choice-container">
+            <div class="choice-text">Choice 1</div>
+          </div>
+          <div class="choice-container">
+            <div class="choice-text">Choice 2</div>
+          </div>
+          <div class="choice-container">
+            <div class="choice-text">Choice 3</div>
+          </div>
+          <div class="choice-container">
+            <div class="choice-text">Choice 4</div>
+          </div>
+          <div class="choice-container">
+            <div class="choice-text">Choice 5</div>
+          </div>
+        </div>
+        <div class="nav-buttons">
+          <button id="back" style="display: none">Back</button>
+          <button id="next">Next</button>
+          <a href="result.html" id="submit-btn" style="display: none">Submit</a>
+        </div>
+        <div id="progress-container">
+          <div id="progress"></div>
+        </div>
+      </div>
+      <div id="result" style="display: none">
+        <h2 id="result-text">Your result will appear here</h2>
+        <button id="play-again">Play Again</button>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
